@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Contáctanos</h1>
+        <form "https://formsubmit.co/divijav19@gmail.com" method="POST" >
+            <fieldset>
+                <legend>Datos básicos</legend>
+                Nombre: <input type="text" placeholder="Blanca" required name="nombre">
+                <br>
+                Correo electrónico: <input type="email" placeholder="tucorreo@correo.com">
+                Numero de teléfono: <input type="tel" placeholder="5555555555" name="telefono" required>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de envio</legend>
+            </fieldset>
+            <fieldset>
+                <legend>Datos del pedido</legend>
+                ¿Qué tipo de postre necesitas?
+                <select name="opciones-postre" id="">
+                    <option value="galletas">Galleta de chocolate</option>
+                    <option value="pasteles">Pasteles</option>
+                    <option value="brownies">Brownies</option>
+                    <option value="arroz con leche">Arroz con leche</option>
+                </select>
+                <br>
+                <input list="opciones-postre-2">
+                <datalist id="opciones-postre-2">
+                    <option value="galletas">Galletas</option>
+                    <option value="pasteles">Pasteles</option>
+                    <option value="brownies">Brownies</option>
+                    <option value="arroz con leche">Arroz con leche</option>
+                </datalist>
+                <br>
+                ¿Cuántas unidades necesitas? <input type="number" min="6" max="100">
+                <br>
+                Fecha del evento: <input type="date">
+            </fieldset>
+            <fieldset>
+                <legend>Datos del pago</legend>
+                Recoger en sucursal
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

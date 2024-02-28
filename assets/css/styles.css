@@ -1,0 +1,25 @@
+*{ /*Selector universal*/
+    margin: 0;
+    padding: 0;
+}
+
+body{ /*Selector de tipo, elemento, etiqueta*/
+    background-color: rgb(20, 71, 53);
+}
+
+p, 
+h1,
+h2{ /*Selecicona todos los elementos p*/
+    color: burlywood;
+}
+
+table {
+    border: 2px solid black; /*Width, estilo, cor de borde*/
+    border-spacing: 15px; /*Espaciado entre celdas*/
+    /*border-collapse: colapse;*/
+}
+
+th{
+    background-color: blanchedalmond;
+    border: 2px red;
+}
