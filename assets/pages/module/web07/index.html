@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CS07</title>
+
+    <script>
+        console.log("Me ejecuto dentro del HTML");
+    </script>
+</head>
+
+<body>
+    <!--Script interno-->
+    <script>
+        console.log("Me ejecuto dentro de body");
+    </script>
+
+    <main>
+        <article>
+            <h1 id="title" class="title-article" onclick="handleTitle()">Sesion Web 07</h1>
+            <p id="description" onclick="changeColor('red')">A esta cohorte le gustan los elotes</p>
+        </article>
+        <article>
+            <h2 class="title-article">Historia del elote</h2>
+            <p onclick="changeColorTextUsingThis('#CCCCFF', this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatum dolores assumenda consequuntur
+                dolorum culpa esse inventore aperiam odit, magni nemo harum obcaecati reiciendis deleniti praesentium
+                natus. Est, quidem distinctio!
+                Minima maiores odio tempora perferendis natus quis iusto, nulla fugit soluta nemo placeat id temporibus
+                libero sit qui similique voluptatem. Laudantium, perspiciatis eos libero nisi provident ex in similique
+                modi.
+                Optio libero placeat distinctio, fugiat fuga mollitia hic impedit possimus cum quis dicta! Quis illum at
+                illo, ab sed maiores sapiente, reprehenderit provident, odit tempora molestias quas nulla modi voluptas!
+            </p>
+            <p onclick="changeColorTextUsingThis('yellow', this)"> 
+                <strong>Penny</strong> prefiere en vaso(esquite)
+            </p>
+            <!-- Agregar un P con la preferencia de tu color y que esquite te gusta -->
+            <!-- Agregar un P con la preferencia de SERCH color #5D6D7E y que esquite : amarillo completo -->
+            <p onclick="changeColorTextUsingThis('#911E06', this)">
+                Mi presnetacion del elote favorita es en esquite.
+            </p>
+            <p onclick="changeColorTextUsingThis('yellow', this)">
+                La presnetacion del elote favorita es amarilo completo.
+            </p>
+            <article>
+                <button onclick="changeColorUsingClass()"> Cambiar color titulos</button>
+                <button onclick="resetColorsParagraph()">Reiniciar colores Párrafos</button>
+            </article>
+        </article>
+
+
+    </main>
+    <!--Script externo-->
+    <script src="./script.js"></script>
+</body>
+
+</html>

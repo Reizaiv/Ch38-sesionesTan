@@ -1,0 +1,140 @@
+/*Resetear los estilos que vienen por default en el navegador*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{ /*Declaracion de variables en CSS*/
+    --color_texto: #5C3d5b;
+    --color_elemento_fieldset: #4D3E6B;
+    --color_fieldset_boton: #f07360;
+}
+
+header{
+    display: flex; /*Visualizacion en un contenedor flexible*/
+    justify-content: space-between; /*Distribuye uniformemente los elementos a lo largo del contenedor*/
+    padding: 10px;
+}
+
+#logo{
+    width: 80px;
+    height: auto;
+    margin: 20px 25px 20px 15px; /*Top, Right Bottom, left*/
+}
+
+nav>ul{
+    list-style-type: none; /*Se eliminan los marcadores de lista*/
+    display: flex;
+}
+
+.elementos-navegacion{
+    margin: 20px 50px;
+    font-size: 1.3em;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*Enlaces dentro de los elementos de la barra de novegacion */
+.elementos-navegacion a{
+    text-decoration: none; /*Elimina el subrayado de la etiqueta a*/
+    color: var(--color_texto);    
+}
+
+.elementos-navegacion a:hover{ /*Uso de la pseudo-clase hover (al pasar el mouse)*/
+    color: var(--color_fieldset_boton);
+    text-decoration: underline overline;
+}
+
+h1{
+    color: var(--color_texto);
+    text-align: center;
+}
+
+form{
+    margin: 0 auto;
+    width: 70%;
+    max-width: 800px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+fieldset{
+    border-color: var(--color_fieldset_boton);
+    border-radius: 1.2em;
+    color: var(--color_elemento_fieldset);
+    margin: 20px;
+}
+
+legend{
+    text-align: left;
+    font-size: 1.6em;
+}
+
+/*Pseudoelemento*/
+legend::first-letter{
+    color: var(--color_fieldset_boton);
+}
+
+#datos-basicos, 
+#datos-pedido, 
+#datos-envio{
+    
+    padding: 30px 50px;
+}
+
+#datos-basicos label,
+#datos-pedido label{
+    display: block; /*Hace que las etiquetas se muestren como elementos de bloque, asi no se utilizan los <br>*/
+}
+
+#datos-basicos input,
+#datos-pedido input{
+    border: 3px solid var(--color_elemento_fieldset);
+    width: 200px;
+    height: 30px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus{
+    outline: none;
+    box-shadow: 3px 2px var(--color_elemento_fieldset);
+}
+
+#datos-pedido select[name="opciones-postre"]{
+    width: 200px;
+    height: 30px;
+    border: 3px solid var(--color_elemento_fieldset);
+}
+
+#datos-envio label{
+    display: inline-block;
+    padding: 2px;
+    margin: 4px;
+}
+
+#terminos{
+    margin: 20px;
+    color: var(--color_elemento_fieldset);
+    float: left;
+}
+
+button[type="submit"]{
+    width: 120px;
+    height: 20px;
+    float: right;
+    color: var(--color_elemento_fieldset);
+    background-color: var(--color_fieldset_boton);
+    border: 2px solid var(--color_texto);
+    border-radius: 1em;
+}
+
+button:active{
+    transform: scale(0.90); /* Reducir ligeramente el tañaño del botón cuando se active */
+}

@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* ALT SHIT A */
+
+.contenedor{
+    width: 300px;
+    margin: 100px auto;
+    border: 5px solid black;
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #10383c;
+    text-align: center;
+}
+
+#caja1{
+    background-color: blueviolet;
+    position: relative;
+    top:100px;
+    right: 100px;
+    left:100px;
+    bottom: 100px; /* Aunque esté declarado bottom y right, prevalecen los valores de top y left */
+}
+
+#caja2{
+    background-color: rgb(91, 196, 237);
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+#caja3{
+    background-color: rgb(43, 226, 116);
+}
+
+#caja4{
+    background-color: rgb(226, 122, 43);
+}
